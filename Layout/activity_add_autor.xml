@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ADD8E6"
+    android:gravity="center_vertical">
+
+    <!-- TextView pentru titlul paginii -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adăugare în tabela Autori"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- EditText pentru Nume -->
+    <EditText
+        android:id="@+id/etNumeAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nume"
+        android:minHeight="48dp" />
+
+    <!-- EditText pentru Prenume -->
+    <EditText
+        android:id="@+id/etPrenumeAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prenume"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- EditText pentru Țara de origine -->
+    <EditText
+        android:id="@+id/etTaraOrigine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Țara de origine"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Buton pentru Salvare -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvează"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

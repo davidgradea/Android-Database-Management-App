@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    tools:context=".CartiActivity">
+
+    <Button
+        android:id="@+id/btnAddCarte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adaugă Carte"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditCarte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Modifică Carte"
+        app:layout_constraintTop_toBottomOf="@id/btnAddCarte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteCarte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Șterge Carte"
+        app:layout_constraintTop_toBottomOf="@id/btnEditCarte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewCarti"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnDeleteCarte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"
+        android:choiceMode="singleChoice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

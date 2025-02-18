@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ADD8E6"
+    android:gravity="center">
+
+    <!-- TextView pentru Hello -->
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificare in tabela Carte"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDenumireCarte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Denumire carte"
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etAnAparitieCarte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="An apariție"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etEdituraCarte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editura"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnUpdateCarte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizează" />
+</LinearLayout>

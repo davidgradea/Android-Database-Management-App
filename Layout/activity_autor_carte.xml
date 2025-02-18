@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ADD8E6"
+    android:padding="16dp">
+
+    <!-- Buton pentru adăugarea unei noi relații -->
+    <Button
+        android:id="@+id/btnAddRelation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adaugă Relație"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Buton pentru modificarea unei relații selectate -->
+    <Button
+        android:id="@+id/btnEditRelation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modifică Relație"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Buton pentru ștergerea unei relații selectate -->
+    <Button
+        android:id="@+id/btnDeleteRelation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Șterge Relație"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ListView cu CheckBox pentru relațiile Autor-Carte -->
+    <ListView
+        android:id="@+id/lvAutorCarte"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:choiceMode="singleChoice" />
+
+</LinearLayout>

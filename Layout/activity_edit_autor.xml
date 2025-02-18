@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    tools:context=".EditAutorActivity">
+
+    <!-- Guideline pentru poziționare mai sus -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <!-- TextView pentru titlul paginii -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificare în tabela Autori"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="@id/guidelineMiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- EditText pentru Nume -->
+    <EditText
+        android:id="@+id/etNumeAutor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nume"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- EditText pentru Prenume -->
+    <EditText
+        android:id="@+id/etPrenumeAutor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Prenume"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/etNumeAutor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- EditText pentru Țara de origine -->
+    <EditText
+        android:id="@+id/etTaraOrigine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Țara de origine"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/etPrenumeAutor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Buton pentru Salvare -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Actualizează"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etTaraOrigine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

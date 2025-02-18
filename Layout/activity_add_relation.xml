@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAutorCarteActivity">
+
+    <!-- Spinner pentru Autori -->
+    <Spinner
+        android:id="@+id/spinnerAutori"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:hint="Selectați un Autor" />
+
+    <!-- Spinner pentru Cărți -->
+    <Spinner
+        android:id="@+id/spinnerCarti"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerAutori"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:hint="Selectați o Carte" />
+
+    <!-- Buton pentru Salvare Relație -->
+    <Button
+        android:id="@+id/btnSaveRelation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvează"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCarti"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ADD8E6"
+    android:gravity="center">
+
+    <!-- Titlu pentru editare -->
+    <TextView
+        android:id="@+id/tvEditBibliotecaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificare in Tabela Bibliotecă"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- EditText pentru Denumire -->
+    <EditText
+        android:id="@+id/etEditDenumire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Denumire Bibliotecă"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <!-- EditText pentru Adresa -->
+    <EditText
+        android:id="@+id/etEditAdresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresă"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <!-- Buton pentru Salvare -->
+    <Button
+        android:id="@+id/btnUpdateBiblioteca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizează"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#800080"
+        android:textColor="#FFFFFF"
+        android:minHeight="48dp" />
+</LinearLayout>

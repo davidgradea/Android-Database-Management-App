@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFC0CB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView pentru informații despre utilizator -->
+    <TextView
+        android:id="@+id/tvUserInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ești conectat ca ..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Buton Autori -->
+    <Button
+        android:id="@+id/btnAutori"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Autori"
+        android:padding="16dp"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toBottomOf="@id/tvUserInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Buton Cărți -->
+    <Button
+        android:id="@+id/btnCarti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cărți"
+        android:padding="16dp"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toBottomOf="@id/btnAutori"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Buton Relație Autor-Cărți -->
+    <Button
+        android:id="@+id/btnRelatie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Relație Autor-Cărți"
+        android:padding="16dp"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toBottomOf="@id/btnCarti"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Buton Bibliotecă -->
+    <Button
+        android:id="@+id/btnBiblioteca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bibliotecă"
+        android:padding="16dp"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toBottomOf="@id/btnRelatie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Buton Relație Cărți-Bibliotecă -->
+    <Button
+        android:id="@+id/btnCarteBiblioteca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Relație Cărți-Bibliotecă"
+        android:padding="16dp"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toBottomOf="@id/btnBiblioteca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnUtilizatori"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Utilizatori"
+        android:padding="16dp"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toBottomOf="@id/btnCarteBiblioteca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        />
+
+    <!-- Buton de delogare -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delogare"
+        android:padding="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toBottomOf="@id/btnCarteBiblioteca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
